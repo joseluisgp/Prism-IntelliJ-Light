@@ -1,0 +1,146 @@
+/*
+    IntelliJ Light Theme for Prism (prismjs.com)
+
+    Based on the default theme common to all JetBrains' IDEs called IntelliJ Light.
+    Uses the newly developed font Jetbrains Mono.
+
+    @author Jose Luis <43698177+joseluisgp@users.noreply.github.com>
+    @version 1.0
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+pre[class*="language-"],
+code[class*="language-"] {
+    color: #080808;
+    font-size: 15px;
+    text-shadow: none;
+    font-family: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection,
+pre[class*="language-"]::mozselection,
+code[class*="language-"]::mozselection {
+    text-shadow: none;
+    background: #a6d2ff;
+}
+
+@media print {
+    pre[class*="language-"],
+    code[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    background: #fbf9f9;
+}
+
+:not(pre) > code[class*="language-"] {
+    padding: .1em .3em;
+    border-radius: .3em;
+    color: #db4c69;
+    background: #f9f2f4;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #8c8c8c;
+}
+
+.token.punctuation {
+    color: inherit;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #1750eb;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #067d17;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #0077aa;
+}
+
+.token.function {
+    color: #00627a;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #871094;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+pre[data-line] {
+    position: relative;
+}
+
+pre[class*="language-"] > code[class*="language-"] {
+    position: relative;
+    z-index: 1;
+}
+
+.line-highlight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: inherit 0;
+    margin-top: 1em;
+    background: #fff8d1;
+    z-index: 0;
+    pointer-events: none;
+    line-height: inherit;
+    white-space: pre;
+}
